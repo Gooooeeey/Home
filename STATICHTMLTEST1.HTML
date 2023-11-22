@@ -3,28 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static HTML Page</title>
+    <title>Happy Birthday!</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow: hidden;
+            background-color: #3498db; /* Change the background color as needed */
+        }
+
+        h1, p, footer {
+            color: #fff; /* Change the text color as needed */
             text-align: center;
-            margin: 50px;
+            position: relative;
+            z-index: 1;
         }
 
-        h1 {
-            color: #3498db;
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 1.6;
+        video, audio {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 0;
         }
     </style>
 </head>
 <body>
 
-<h1>Welcome to My Static HTML Page</h1>
-<p>This is a simple static HTML page with fixed content. You can customize the content and styles based on your needs.</p>
+<h1>Happy Birthday to You!</h1>
+
+<video autoplay loop muted controls>
+    <source src="https://gitlab.com/<your-gitlab-username>/<your-repository-name>/-/raw/main/happy_birthday_video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<audio autoplay loop>
+    <source src="https://gitlab.com/<your-gitlab-username>/<your-repository-name>/-/raw/main/happy_birthday_audio.mp3" type="audio/mp3">
+    Your browser does not support the audio tag.
+</audio>
+
+<p>Wishing you a fantastic day filled with joy and laughter! 🎉🎂</p>
 
 <footer>
     <p>&copy; 2023 Your Name</p>
